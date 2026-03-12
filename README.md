@@ -6,7 +6,7 @@ This microservice allows the user to get the current weather at a provided zipco
 
 **How do I request data from this microservice?**
 
-To request data from this microservice, you will need to make an `HTTP GET request` to the `/weatherforecast` endpoint. You must pass `zipcode` as a string that represents the zipcode that you would like to get the current conditions of. 
+To request data from this microservice, you will need to make an `HTTP GET request` to the `/weatherforecast` endpoint. You must pass `zipcode` as a string that represents the zipcode that you would like to get the current conditions of. This microservice uses the OpenWeatherMap API, and you must have a .env variable named `OPENWEATHER_API_KEY` (which is your API key) in order to use the microservice.
 
 _Example call:_ `GET http://127.0.0.1:8000/weatherforecast?zipcode=90210`
 
